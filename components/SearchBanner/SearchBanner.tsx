@@ -11,7 +11,7 @@ import {
 import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
 const SearchBanner: React.FC = () => {
     return (
-        <Container className="h-96 bg-[url('https://t7.baidu.com/it/u=263697791,3168833444&fm=193&f=GIF')] bg-no-repeat bg-cover">
+        <Container className="h-96 bg-[url('https://www.cvh.ac.cn/public/images/background_b.jpg')] bg-no-repeat bg-cover">
             <Container
                 size="3"
                 className="flex justify-center items-center h-96"
@@ -25,9 +25,9 @@ const SearchBanner: React.FC = () => {
                             Chinese Academy of Sciences
                         </Text>
                     </Box>
-                    <Box>
+                    <Box className="w-2/4">
                         <Flex justify="between">
-                            <TextField.Root>
+                            <TextField.Root className="w-10/12">
                                 <TextField.Slot>
                                     <MagnifyingGlassIcon
                                         height="16"
@@ -36,7 +36,9 @@ const SearchBanner: React.FC = () => {
                                 </TextField.Slot>
                                 <TextField.Input placeholder="Search the docs…" />
                             </TextField.Root>
-                            <Button>高级检索</Button>
+                            <Box>
+                                <Button color="indigo">高级检索</Button>
+                            </Box>
                         </Flex>
                     </Box>
                 </Flex>

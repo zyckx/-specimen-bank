@@ -2,7 +2,7 @@ import * as React from "react";
 import { Container, Box, Flex, Button } from "@radix-ui/themes";
 const NavBar = () => {
     return (
-        <Box width="100%" className=" text-white bg-slate-400">
+        <Box width="100%" className=" text-white bg-blue-800">
             <Container size="3">
                 <Flex py="3" justify="start" align="start">
                     <Box px="3">首页</Box>
